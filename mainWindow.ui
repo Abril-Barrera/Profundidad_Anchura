@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>907</width>
+    <height>595</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Calculo de particulas</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>gold-star-11546681624di2ymvxiq0.png</normaloff>gold-star-11546681624di2ymvxiq0.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lbCALCULODEPARTICULAS">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>421</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Semibold</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>4</number>
+    </property>
+    <property name="text">
+     <string>CALCULO DE PARTICULAS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="margin">
+     <number>17</number>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>421</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Ingresa los datos de la particula:</string>
+    </property>
+    <widget class="QLineEdit" name="leVELOCIDAD">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>127</y>
+       <width>271</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>4</number>
+     </property>
+     <property name="placeholderText">
+      <string>En km/h</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leDESTINOx">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>75</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="placeholderText">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbVELOCIDAD">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>127</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>VELOCIDAD:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leID">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>23</y>
+       <width>271</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>8</number>
+     </property>
+     <property name="placeholderText">
+      <string>8 digits</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbDISTANCIA">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>153</y>
+       <width>123</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>DISTANCIA EUCLIDIANA:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbDESTINO">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>75</y>
+       <width>48</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>DESTINO:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbID">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>23</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leORIGENx">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>49</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="placeholderText">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbORIGEN">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>49</y>
+       <width>43</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ORIGEN:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leCOLORr">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>101</y>
+       <width>87</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="placeholderText">
+      <string>R</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbCOLOR">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>101</y>
+       <width>39</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>COLOR:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leCOLORg">
+     <property name="geometry">
+      <rect>
+       <x>235</x>
+       <y>101</y>
+       <width>86</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="placeholderText">
+      <string>G</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leCOLORb">
+     <property name="geometry">
+      <rect>
+       <x>329</x>
+       <y>101</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="placeholderText">
+      <string>B</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leORIGENy">
+     <property name="geometry">
+      <rect>
+       <x>278</x>
+       <y>49</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="locale">
+      <locale language="Spanish" country="UnitedStates"/>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="placeholderText">
+      <string>Y</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leDESTINOy">
+     <property name="geometry">
+      <rect>
+       <x>279</x>
+       <y>74</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>3</number>
+     </property>
+     <property name="placeholderText">
+      <string>Y</string>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcdDistancia">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>153</y>
+       <width>271</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pbGuardar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Guardar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbLimpiar">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>280</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limpiar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbMostrar">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>280</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mostrar</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>411</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>90</y>
+      <width>451</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Visualizador</string>
+    </property>
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>431</width>
+       <height>461</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pbOrdenarDistancia">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ordenar Distancia</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbOrdenarVelocidad">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>10</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ordenar Velocidad</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbVisualizar">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>10</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Visualizar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbMostrarGrafo">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>280</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mostrar Grafo</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="origenGrafo">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>50</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>8</number>
+    </property>
+    <property name="placeholderText">
+     <string>(x,y)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>60</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Origen: </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>907</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+   </widget>
+   <widget class="QMenu" name="menuVer">
+    <property name="title">
+     <string>Ver</string>
+    </property>
+    <addaction name="aVerPuntos"/>
+    <addaction name="actionGrafo"/>
+   </widget>
+   <widget class="QMenu" name="menuAlgoritmos">
+    <property name="title">
+     <string>Algoritmos</string>
+    </property>
+    <addaction name="aPuntosCercanos"/>
+    <addaction name="aRecorridoProfundidad"/>
+    <addaction name="aRecorridoAnchura"/>
+    <addaction name="aPrim"/>
+    <addaction name="aKruskal"/>
+    <addaction name="aMostrar"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuVer"/>
+   <addaction name="menuAlgoritmos"/>
+  </widget>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar Archivo</string>
+   </property>
+  </action>
+  <action name="aVerPuntos">
+   <property name="text">
+    <string>Puntos</string>
+   </property>
+  </action>
+  <action name="aPuntosCercanos">
+   <property name="text">
+    <string>Puntos Más cercano</string>
+   </property>
+  </action>
+  <action name="actionGrafo">
+   <property name="text">
+    <string>Grafo</string>
+   </property>
+  </action>
+  <action name="aRecorridoProfundidad">
+   <property name="text">
+    <string>Recorrido Profundidad</string>
+   </property>
+  </action>
+  <action name="aRecorridoAnchura">
+   <property name="text">
+    <string>Recorrido Anchura</string>
+   </property>
+  </action>
+  <action name="aPrim">
+   <property name="text">
+    <string>Prim</string>
+   </property>
+  </action>
+  <action name="aMostrar">
+   <property name="text">
+    <string>Mostrar Grafo</string>
+   </property>
+  </action>
+  <action name="aKruskal">
+   <property name="text">
+    <string>Kruskal</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

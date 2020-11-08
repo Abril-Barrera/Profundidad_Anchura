@@ -1,0 +1,33 @@
+[
+    {
+        "color": {
+            "blue": 206, 
+            "green": 180, 
+            "red": 121
+        }, 
+        "destino": {
+            "y": 200, 
+            "x": 100
+        }, 
+        "origen": {
+            "y": 100, 
+            "x": 200        }, 
+        "id": 426, 
+        "velocidad": 38
+    }, 
+    {
+        "color": {
+            "blue": 154, 
+            "green": 204, 
+            "red": 24
+        }, 
+        "destino": {
+            "y": 600, 
+            "x": 500
+        }, 
+        "origen": {
+            "y": 400, 
+            "x": 300        }, 
+        "id": 786, 
+        "velocidad": 3
+    }]

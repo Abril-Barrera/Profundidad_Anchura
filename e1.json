@@ -1,0 +1,19 @@
+[
+     {
+          "id": 12,
+          "origen": {
+               "x": 23,
+               "y": 4
+          },
+          "destino": {
+               "x": 5,
+               "y": 56
+          },
+          "velocidad": 7,
+          "color": {
+               "red": 6,
+               "green": 7,
+               "blue": 6
+          }
+     }
+]
